@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space race</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="lives-control">
+        <div>Lives: <span class="lives">3</span></div>
+        <div class="pause"><i class="fas fa-pause"></i></div>
+        <div>Score: <span class="score">0</span></div>
+    </div>
+    <div id="game">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="star-box"></div>
+        <div class="star-box"></div>
+        <div class="star-box">
+            <img src="ship.png" alt="star-ship" id="star-ship">
+        </div>
+        <div class="star-box"></div>
+        <div class="star-box"></div>
+        <div class="buttons-control left">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="fire-button">
+            <div class="progress-bar" style="width: 100%;"></div>
+        </div>
+        <div class="buttons-control right">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

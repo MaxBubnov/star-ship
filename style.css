@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#game {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    font-size: 2rem;
+    flex-wrap: wrap;
+}
+.column {
+     width: 20%;
+     height: 70%;
+     position: relative;
+     /*background: red;*/
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.laser {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    width: 15%;
+    background: linear-gradient(to right, red , #ff4e0b, red);
+    animation: laseranim .2s ease;
+}
+@keyframes laseranim {
+    from{
+        height: 0;
+        bottom: 0;
+    }
+    50%{
+        height: 100%;
+        bottom: 0;
+    }
+    to {
+        height: 0;
+        bottom: 100%;
+    }
+}
+.star-box {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#star-ship {
+    height: 100%;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+}
+.buttons-control {
+    width: 38%;
+    height: 10vh;
+    background: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.buttons-control:hover {
+    cursor: pointer;
+}
+.fire-button {
+    width: 24%;
+    height: 10vh;
+    background: #791e16;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.progress-bar {
+    background: #ff281e;
+    height: 100%;
+}
+/*#full-bar {
+    width: 100%;
+    transition: width 15s linear;
+}*/
+.asteroid {
+    height: 24%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+.asteroid img{
+    height: 100%;
+}
+.lives-control {
+    width: 100%;
+    height: 5vh;
+    background: #000016;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pause {
+    height: 24px;
+    width: 24px;
+    font-size: 26px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.pause:hover {
+    cursor: pointer;
+}
+.strips {
+    height: 100%;
+    width: 8px;
+    background: white;
+}
+.strips:hover {
+    cursor: pointer;
+}
+.replay {
+    width: 20vh;
+    height: 7vh;
+    background: #00c100;
+    border-radius: 1vh;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background .5s ease-in-out;
+}
+.replay:hover {
+    background: #00a300;
+    cursor: pointer;
+}
